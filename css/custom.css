@@ -700,4 +700,19 @@ margin-top:20px;
 .head-signin-form .form-group{font-size:11px; color:#ffffff; padding-top:15px;}
 
 
+/* Payment Page */
+.payment-info{
+font-weight: bold;
+color: #9E9A9A;
+font-size: 16px;
+}
+.payment-info span{
+	color: #564F4F;
+font-weight: 400;
+}
+#credit-table >tbody>tr>td{border-top:0px;}
+#credit-table>thead>tr>th{vertical-align:middle;}
+.pay{margin-bottom:20px;}
+
+
 
