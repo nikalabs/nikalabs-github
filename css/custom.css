@@ -687,3 +687,17 @@ margin-bottom: 40px;
 margin-top:20px;
 }
 
+
+/* Sign-In-2 */
+.head-signin-form {width:35%; float:right;}
+.head-signin-form .phone{width:150px; float: left;}
+.head-signin-form .pass{width:150px; float:left; margin-left:15px;}
+.head-signin-form .pass input{margin-left:-1px;}
+.head-signin-form .pass span{margin-left:10px;}
+.head-signin-form span{font-size:11px;}
+.head-signin-form .log{float:right; }
+.head-signin-form .form-group input.pass{background-image:none;}
+.head-signin-form .form-group{font-size:11px; color:#ffffff; padding-top:15px;}
+
+
+
