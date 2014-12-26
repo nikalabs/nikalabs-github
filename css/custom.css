@@ -510,7 +510,15 @@ text-align: center;
 .pack{background:#ffffff; color:#414042;}
 .payment .dropdown-menu{width:100%; border:0px; }
 .account-form .payment .credit span.caret{color:transparent;}
- 
+.account-form .payment .card-name{margin-left:10px; width:300px;}
+ .ccard{width:40%; float:left;}
+.ppal .dropdown-menu{padding:20px; margin-top:10px;}
+.ppal input{text-shadow:0px 0p x0px; border-radius:4px; width:100%; border:0px; height:35px; padding-left:10px;}
+.ppal button{border:0px;}
+.ppal button .caret{color:transparent;}
+.ccard .dropdown-menu{margin-top:10px;}
+
+
 
 
 /* Friends */
