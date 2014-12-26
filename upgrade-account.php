@@ -1,4 +1,5 @@
-
+<
+   </nav>
 <!-- Start of Main Body -->
    <div class="main">
    	<div class="container">
@@ -30,32 +31,36 @@
           <div class="businessname">Business Name<br/>
           <input type="text" class="form-control business-name" placeholder="Target Store 134" name="business_name" id="business-name"></div>
            <div id="1" class="type payment">Payment Method<br/>
-            <div class="ccard">
-           <button type="button" class="btn credit dropdown-toggle" data-toggle="dropdown" id="ccard" aria-expanded="false">
-     Credit Card
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu" iaria-labelledby="ccard">
-      <li><div class="card-name">Name on Card<br/>
-          <input type="text" class="form-control card-name" placeholder="John Smith" name="name_on_card" id="card-name"></div></li>
-      <li><a href="#"><div class="ccnumber">Credit Card Number<br/>
+            <div class="ccard" style="width:100%;" role="tabpanel">
+      
+  <ul class="nav nav-tabs" role="tablist" id="myTab">
+  <li role="presentation" class="credit"><a  href="#creditcard" aria-controls="creditcard" role="tab" data-toggle="tab"><span>Credit Card</span></a></li>
+  <li role="presentation"><a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab"><img src="images/paypal.png"></a></li>
+  
+</ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="creditcard">
+    <div class="card-name">Name on Card<br/>
+          <input type="text" class="form-control card-name" placeholder="John Smith" name="name_on_card" id="card-name"></div>
+    <div class="ccnumber">Credit Card Number<br/>
           <input type="password" class="form-control ccnumber" id="ccnumber" placeholder="&#9679;&#9679;&#9679;&#9679; - &#9679;&#9679;&#9679;&#9679; - &#9679;&#9679;&#9679;&#9679; - 4392" name="credit_number" size="8" ></div>
           <div class="cc-details">
           <div class="exp-date">Expiration Date<br/>
-          <input type="text" class="form-control month" placeholder="11" name="expiration_date" id="month"><input type="text" class="form-control year" placeholder="16" name="expiration_year" id="year"></div>
+          <input type="text" class="form-control month" placeholder="11" name="expiration_date" id="month"><input type="text" class="form-control year" placeholder="16" name="expiration_year" id="year">
+        </div>
           <div class="cvv">CVV<br/>
-          <input type="text" class="form-control CVV-no" placeholder="493" name="CVV" id="CVV"></div></a></li>
-     
-    </ul>
-    </div>
-    <div class="ppal">
-  <button id="paypal" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="paypal">
-    paypal
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="paypal">
-    <li>Email Address<input type="email" placeholder="JohnSmith4382@target.co" class="email-ppal" name="email"></li>
-  </ul>
+          <input type="text" class="form-control CVV-no" placeholder="493" name="CVV" id="CVV"></div></div></div>
+  <div role="tabpanel" class="tab-pane" id="paypal">Email Address<br><input type="email" placeholder="JohnSmith4382@target.co" class="email-ppal" name="email"></div>
+ 
+</div>
+
+<script>
+  $(function () {
+     $('#myTab a:first').tab('show')
+    $('#myTab a:last').tab('show')
+  })
+</script>
 </div>
           
        
