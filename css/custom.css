@@ -715,4 +715,17 @@ font-weight: 400;
 .pay{margin-bottom:20px;}
 
 
+/* Filter Pop Up */
+#search-popup-form input{width:100%; border:0px; border-radius:4px; height:35px; padding-left:10px;}
+select#category{height:35px; width:100%; border:0px;}
+#category option{height:35px;}
+select.radius{height:35px; border:0px; width:55%;}
+.adding{width:100%; background-color:#32328f; color:#ffffff;}
+.removing{width:50%; background-color:#afd46b; color:#ffffff;}
+#search-popup-form .wrapper input{width:92%; float:left;}
+#search-popup-form  .wrapper.string{background-color:#ffffff; border-radius:4px;}
+#search-popup-form .wrapper .glyphicon-remove-circle{padding-top:10px; padding-bottom:10px;}
+
+
+
 
