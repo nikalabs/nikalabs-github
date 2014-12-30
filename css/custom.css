@@ -52,10 +52,12 @@ h1 small{float:right;}
 .thumbnail .caption h5{font-size:14px; color:#666666;}
 .thumbnail .caption h5 small{float:right; font-size:30px; font-family:'Lato', sans-serif; color:#70a711; margin-top:-10px;}
 /* Footer */
-.footer{background-color:#262626; color:#ffffff; padding-top:30px; margin-top:70px;}
+.footer-menu li{padding:0px 10px; float:left;}
+
+.footer{background-color:#262626; color:#ffffff; padding-top:20px; margin-top:70px; padding-bottom:20px;}
 .footer ul{list-style:none; margin-left:0px; padding-left:10px;}
 .footer a{color:#ffffff;}
-.footer .copy-right{padding-left:20px; font-size:12px;}
+.footer .copy-right{padding-left:20px; font-size:12px; width:100%; float:left; padding-top: 10px;}
 .footer-icons{text-align:right; width:100%; float:left; padding-bottom:20px;}
 .footer-icons .appstore{padding-left:20px;}
 .footer-socials{text-align:right; }
@@ -108,7 +110,6 @@ h1 small{float:right;}
 .thumbnail .image-container .dropdown-menu>li>a{
 	padding:3px 10px;
 }
-
 
 
 
@@ -544,6 +545,22 @@ margin-bottom: 20px;
 .ccard .credit{border:1px solid #32328f; color:#606163; font-size:12px; border-radius:4px;}
 
 
+.ccselector label > input{ /* HIDE RADIO */
+  display:none;
+}
+.ccselector label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+.ccselector label > input:checked + img{ /* (CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+.payment .store-address{margin-top: 10px; margin-bottom:10px;}
+.payment .store-city{width:30%; float:left; margin-right: 18px; margin-bottom: 10px;}
+.payment .store-zip{width:30%; float:left; margin-right:18px; margin-bottom: 10px;}
+.payment .store-sate{width:30%; float:left; margin-bottom: 10px;}
+
+
 /* Friends */
 #friend-search{width:270px; background-color:#628f12; color:#ffffff; background-image:url(../images/search-small.png); background-position: 10px 10px; background-repeat: no-repeat; padding-left: 30px; border:0px;}
 .frinds-search input::-webkit-input-placeholder { /* WebKit browsers */
@@ -698,6 +715,10 @@ margin-top:20px;
 .head-signin-form .log{float:right; }
 .head-signin-form .form-group input.pass{background-image:none;}
 .head-signin-form .form-group{font-size:11px; color:#ffffff; padding-top:15px;}
+.fb-log {width:50%; text-align:center;}
+.fb-log img{padding-left: 30px; padding-top: 10px;}
+
+
 
 
 /* Payment Page */
@@ -713,6 +734,7 @@ font-weight: 400;
 #credit-table >tbody>tr>td{border-top:0px;}
 #credit-table>thead>tr>th{vertical-align:middle;}
 .pay{margin-bottom:20px;}
+.btn.edit-payment{background-color:#7ab317; color:#ffffff; border-radius:4px; text-align:center;}
 
 
 /* Filter Pop Up */
