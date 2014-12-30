@@ -171,13 +171,13 @@ questions to help you find a coffee you’re ...</p>
    	 <div class="row top">
    	 	<div class="col-md-8">
    	 		<ul class="footer-menu">
-   	 			<li><a href="#">About Front Apron</a></li>
-   	 			<li><a href="#">Businesses</a></li>
-   	 			<li><a href="#">Terms & Privacy</a></li>
+   	 			<li><a href="#">About FrontApron</a></li>
+   	 			<li><a href="#">Privacy Policy</a></li>
+   	 			<li><a href="#">Terms & Conditions</a></li>
    	 			<li><a href="#">Help</a></li>
    	 		</ul>
 
-      <p class="copy-right">© 2014, Front Apron.  All Rights Reserved.</p>
+      <p class="copy-right">© 2014, FrontApron.  All Rights Reserved.</p>
      
    	 	</div><!-- End of the Footer First Column -->
    	 	<div class="col-md-4">
