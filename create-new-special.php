@@ -1,5 +1,4 @@
 
-   </nav>
 <!-- Start of Main Body -->
    <div class="main">
    	<div class="container">
@@ -259,7 +258,60 @@ document.write(cal);
          </label>
          <input id="file-input" type="file"/>
   </div></p>
-     <p><input id="location-add" style="font-size:12px;color:#000066;font-family:verdana;" type="button" name="B1" value="+ Add Location" onClick="popup('location-pop-up.html','','350','450','left','front');"></p>
+
+  
+  <ul id="results" style="list-style:none; padding:0px; margin-bottom:20px;"></ul>
+     <div><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  + Add Location
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#32328f; color:#ffffff;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-map-marker"></span> Add Location </h4>
+      </div>
+      <div class="modal-body" style="background-color:#f2f2f2;">
+       
+       
+     <div class="intro">Your Saved Locations:</div>
+     <div id="inputs">
+    
+    
+    
+
+       <table class="table" id="popup-table">
+        <form action="" method="post" id="popup-form">
+          
+         <tr  class="table-header">
+    
+    <td><input type="checkbox" value="123 Pomegranite St. Los Santos, CA 90213"><label> 123 Pomegranite St.<span> Los Santos, CA 90213</span></label>
+</td>
+</tr>
+<tr>
+     <td><input type="checkbox" value="456 Orange Blvd Los Santos, CA 90213"><label> 456 Orange Blvd<span> Los Santos, CA 90213</span></label></td>
+    
+  </tr>
+<tr>      
+ <td style="border-bottom:0px;"> <input type="submit" value="post" class="submit" id="submit_location" onclick="return false;"> </td>
+</tr>
+
+</form>
+   </table>
+     </div>
+
+
+        </div>
+   
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div></div>
 
        
         <button type="submit" class="btn btn-default btn-lg create-btn">Create Special</button>
@@ -281,3 +333,4 @@ document.write(cal);
     </div><!-- End of the Container -->
    
    </div> <!-- End of the Main -->
+  

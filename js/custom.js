@@ -32,3 +32,38 @@
     });
 });
       </script>
+
+
+
+
+       <script>
+ $(document).ready(function(){
+      
+     $('#inputs input').change(function() {
+  if (this.checked) {
+    $li = $('<li></li>');
+    $li.text(this.value);
+    $('#results').append($li);
+  }
+  else {
+    $('li:contains('+this.value+')', '#results').remove();
+  }
+});
+
+  });
+ </script>
+
+
+
+
+ <script>
+$(document).ready(function(){
+  $("#submit_post").click(function(){
+    var name=$("#filterstring").val();
+    $.post("filter.php",{fstring:name},function(result){
+      $("#result").append(result);
+    });
+     
+  });
+});
+</script>
