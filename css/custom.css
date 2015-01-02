@@ -121,7 +121,7 @@ h1 small{float:right;}
 }
 .first-column .thumbnail .image-container .after{background:transparent;}
 .first-column .thumbnail .image-container .after:hover{
-background:rgba(65, 65, 82, 0.6);
+background:rgba(38, 38, 48, 0.6);
 }
 
 .first-column .thumbnail .image-container .dropdown-menu li> a> img{width:21px; height:21px; float:left; margin-left:10px;}
