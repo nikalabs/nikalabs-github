@@ -35,7 +35,7 @@ header .container .navbar-btn{float:right; margin-top:20px;}
 .navbar-form .search{background-color:transparent; color:transparent; border:0px; }
 .head-signin-form input{width:150px; height:22px;}
 .head-signin-form button{padding:0px 6px;}
-.navbar.navbar-static-top .container .navbar-form{text-align:center;}
+.navbar.home .container .navbar-form{text-align:center; width:100%;}
 /* Main - Home */
 
 h1{font-family: 'Lato', sans-serif;
@@ -82,7 +82,7 @@ h1 small{float:right;}
 }
 .thumbnail .image-container .after p{
 	text-align:center;
-	padding-top:134px;
+	padding-top:84px;
 	color:#ffffff;
 	font-size:18px;
 }
@@ -92,6 +92,7 @@ h1 small{float:right;}
 	z-index:1000000;
 }
 .thumbnail .image-container .dropdown-menu{
+	
 	right:auto;
 	top:25px;
 	left:92%;
@@ -100,6 +101,31 @@ h1 small{float:right;}
 	box-shadow:0px 0px 0px ;
 
 }
+.first-column .thumbnail .image-container .dropdown-menu{
+	display:none;
+
+}
+.first-column .thumbnail .image-container .dropdown-menu{
+	display:none;
+	right:auto;
+	top:5px;
+	left:59%;
+	background-color:transparent;
+	border-radius:0px;
+	box-shadow:0px 0px 0px ;
+	border:0px;
+
+}
+.first-column .thumbnail .image-container .after{background:transparent;}
+.first-column .thumbnail .image-container .after:hover{
+background:rgba(65, 65, 82, 0.6);
+}
+
+.first-column .thumbnail .image-container .dropdown-menu li> a> img{width:21px; height:21px; float:left; margin-left:10px;}
+.first-column .thumbnail .image-container .dropdown-menu li> a> span{float:left; width:50px; text-align:right; font-size:14px; color:#7ab317;}
+.first-column .thumbnail .image-container:hover .dropdown-menu{
+	display:block;
+	}
 .thumbnail .image-container .dropdown-menu li a{
 	color:#ffffff;
 	font-size:14px;
