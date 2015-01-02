@@ -35,9 +35,10 @@ header .container .navbar-btn{float:right; margin-top:20px;}
 .navbar-form .search{background-color:transparent; color:transparent; border:0px; }
 .head-signin-form input{width:150px; height:22px;}
 .head-signin-form button{padding:0px 6px;}
-.navbar.home .container .navbar-form{text-align:center; width:100%;}
-.head-signin-form #log{width:55px; padding:0px 6px; font-size:12px; margin-top:5px; background-color:#8FC03B; color:#ffffff;}
-.head-signin-form .log{font-size:13px; width:55px; padding:0px 6px; background-color:#8FC03B; color:#ffffff;}
+.navbar.home .container .navbar-form{text-align:left; width:100%;}
+.navbar.home .container .navbar-form .form-group{margin-left:-30px;}
+.head-signin-form #log{width:55px; padding:0px 6px; font-size:12px; margin-top:5px; background-color:#8FC03B; color:#ffffff; border-radius:1px;}
+.head-signin-form .log{font-size:13px; width:55px; padding:0px 6px; background-color:#8FC03B; color:#ffffff; border-radius:1px; border:0px;}
 /* Main - Home */
 
 h1{font-family: 'Lato', sans-serif;
@@ -756,7 +757,8 @@ margin-top:20px;
 .head-signin-form .phone{width:150px; float: left;}
 .head-signin-form .pass{width:150px; float:left; margin-left:15px;}
 .head-signin-form .pass input{margin-left:-1px;}
-.head-signin-form .pass span{margin-left:10px;}
+.head-signin-form .pass span{margin-left:10px; }
+.head-signin-form .pass span a{color:#ffffff;}
 .head-signin-form span{font-size:11px;}
 .head-signin-form .log{float:right; }
 .head-signin-form .form-group input.pass{background-image:none;}
@@ -793,6 +795,13 @@ select.radius{height:35px; border:0px; width:55%;}
 #search-popup-form .wrapper input{width:92%; float:left;}
 #search-popup-form  .wrapper.string{background-color:#ffffff; border-radius:4px;}
 #search-popup-form .wrapper .glyphicon-remove-circle{padding-top:10px; padding-bottom:10px;}
+
+
+
+
+body {
+font-family: OpenSans,'Helvetica Neue',Helvetica,Arial,FreeSans,sans-serif;
+}
 
 
 
