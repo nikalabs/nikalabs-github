@@ -33,7 +33,9 @@ header .container .navbar-btn{float:right; margin-top:20px;}
 .navbar-default .navbar-nav>li:last-child{border:0px;}
 .navbar-nav>li>a{padding-top:10px; padding-bottom:10px;}
 .navbar-form .search{background-color:transparent; color:transparent; border:0px; }
-
+.head-signin-form input{width:150px; height:22px;}
+.head-signin-form button{padding:0px 6px;}
+.navbar.navbar-static-top .container .navbar-form{text-align:center;}
 /* Main - Home */
 
 h1{font-family: 'Lato', sans-serif;
@@ -54,9 +56,9 @@ h1 small{float:right;}
 /* Footer */
 .footer-menu li{padding:0px 10px; float:left;}
 
-.footer{background-color:#262626; color:#ffffff; padding-top:20px; margin-top:70px; padding-bottom:20px;}
+.footer{background-color:#f1f1f1; color:#999; padding-top:20px; margin-top:70px; padding-bottom:20px;}
 .footer ul{list-style:none; margin-left:0px; padding-left:10px;}
-.footer a{color:#ffffff;}
+.footer a{color:#999;}
 .footer .copy-right{padding-left:20px; font-size:12px; width:100%; float:left; padding-top: 10px;}
 .footer-icons{text-align:right; width:100%; float:left; padding-bottom:20px;}
 .footer-icons .appstore{padding-left:20px;}
@@ -730,7 +732,7 @@ margin-top:20px;
 .head-signin-form span{font-size:11px;}
 .head-signin-form .log{float:right; }
 .head-signin-form .form-group input.pass{background-image:none;}
-.head-signin-form .form-group{font-size:11px; color:#ffffff; padding-top:15px;}
+.head-signin-form .form-group{font-size:11px; color:#ffffff; padding-top:5px;}
 .fb-log {width:50%; text-align:center;}
 .fb-log img{padding-left: 30px; padding-top: 10px;}
 
