@@ -550,7 +550,7 @@ text-align: center;
 .pack{background:#ffffff; color:#414042;}
 .payment .dropdown-menu{width:100%; border:0px; }
 .account-form .payment .credit span.caret{color:transparent;}
-.account-form .payment .card-name{m width:300px;}
+.account-form .payment .card-name{width:300px;}
  .ccard{width:40%; float:left;}
 .ppal .dropdown-menu{padding:20px; margin-top:10px;}
 .ppal input{text-shadow:0px 0p x0px; border-radius:4px; width:100%; border:0px; height:35px; padding-left:10px;}
@@ -802,7 +802,10 @@ select.radius{height:35px; border:0px; width:55%;}
 body {
 font-family: OpenSans,'Helvetica Neue',Helvetica,Arial,FreeSans,sans-serif;
 }
-
-
+/** Index 2 **/
+.navbar-form.search {float:left !important; }
+.navbar-form.search .form-group{margin-left:20px; margin-top:15px;}
+.head-signin-form.home{width:55px; float:right; padding-top:10px;}
+.navbar-form.search .form-group input{width:300px; height:30px;}
 
 
