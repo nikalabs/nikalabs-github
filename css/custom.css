@@ -23,13 +23,14 @@ Tags:
 }
 /* Header-Nav bar */
 
-.navbar-default{background-color:#7ab317;}
+.navbar-default{background-color:#7ab317; height:auto;}
+.navbar-form{margin-top:6px;}
 .navbar-default .navbar-nav{padding-top:2px;}
 header{background-color:#32328f;}
 .navbar-brand{height:80px; padding:15px 0px;}
 header .container .navbar-btn{float:right; margin-top:20px;}
-.navbar-default .navbar-nav>li>a {color:#ffffff;}
-.navbar-default .navbar-nav>li{border-right:1px solid #ffffff; margin:5px 0px 5px 0px;}
+.navbar-default .navbar-nav>li>a {color:#ffffff; }
+.navbar-default .navbar-nav>li{border-right:1px solid #ffffff; margin:5px 0px 0px 0px;}
 .navbar-default .navbar-nav>li:last-child{border:0px;}
 .navbar-nav>li>a{padding-top:10px; padding-bottom:10px;}
 .navbar-form .search{background-color:transparent; color:transparent; border:0px; }
@@ -37,12 +38,16 @@ header .container .navbar-btn{float:right; margin-top:20px;}
 .head-signin-form button{padding:0px 6px;}
 .navbar.home .container .navbar-form{text-align:left; width:100%;}
 .navbar.home .container .navbar-form .form-group{margin-left:-30px;}
-.head-signin-form #log{width:55px; padding:0px 6px; font-size:12px; margin-top:5px; background-color:#8FC03B; color:#ffffff; border-radius:1px;}
-.head-signin-form .log{font-size:12px; width:55px; padding:2.5px 6px; background-color:#8FC03B; color:#ffffff; border-radius:1px; border:0px;}
+.head-signin-form #log{width:80px; padding:6px 12px; font-size:12px; margin-top:10px; background-color:#73A221; color:#ffffff; border-radius:1px; margin-bottom:8px; background-image: linear-gradient(#96CC39 4%, #73A221 5%, #669418); border-radius:3px;}
+.head-signin-form .log{font-size:12px; width:80px; padding:0px 8px; background-color:transparent; color:#ffffff; border-radius:1px; border:0px;}
+.head-signin-form .log:hover{padding:3px 8px; background-color:#73A221; border-radius:3px; color:#ffffff;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color:#32328f;}
+.navbar-default .navbar-nav>li>a.active{color:#32328f; border-bottom:3px solid #32328f;}
+
 /* Main - Home */
 
 h1{font-family: 'Lato', sans-serif;
-font-weight:800; 
+font-weight:800;
 color:#32328f;
 font-size:30px;
 font-style:italic;
@@ -56,6 +61,9 @@ h1 small{float:right;}
 .thumbnail .caption .company-logo{float:right; margin-top:-10px;}
 .thumbnail .caption h5{font-size:14px; color:#666666;}
 .thumbnail .caption h5 small{float:right; font-size:30px; font-family:'Lato', sans-serif; color:#70a711; margin-top:-10px;}
+.thumbnail .image-container{height:auto; overflow:hidden;}
+
+
 /* Footer */
 .footer-menu li{padding:0px 10px; float:left;}
 
@@ -71,7 +79,7 @@ h1 small{float:right;}
 .thumbnail .image-container {
     position: relative;
     width: 100%;
-    
+
 }
 .thumbnail .image-container .no-margin{width:100%;}
 .thumbnail .image-container .after {
@@ -81,7 +89,7 @@ h1 small{float:right;}
     width: 100%;
     height: 100%;
     display: block;
-    background: rgba(115, 117, 243, 0.6);
+    background: rgba(115, 117, 243, 0.2);
 }
 .thumbnail .image-container .after p{
 	text-align:center;
@@ -95,7 +103,7 @@ h1 small{float:right;}
 	z-index:1000000;
 }
 .thumbnail .image-container .dropdown-menu{
-	
+
 	right:auto;
 	top:25px;
 	left:92%;
@@ -110,22 +118,22 @@ h1 small{float:right;}
 }
 .first-column .thumbnail .image-container .dropdown-menu{
 	display:none;
-	right:auto;
-	top:5px;
-	left:59%;
+	right:0;
+	top:0;
+    margin-left:-100px;
 	background-color:transparent;
 	border-radius:0px;
 	box-shadow:0px 0px 0px ;
 	border:0px;
-
 }
-.first-column .thumbnail .image-container .after{background:transparent;}
+
+
 .first-column .thumbnail .image-container .after:hover{
 background:rgba(38, 38, 48, 0.6);
 }
 
 .first-column .thumbnail .image-container .dropdown-menu li> a> img{width:21px; height:21px; float:left; margin-left:10px;}
-.first-column .thumbnail .image-container .dropdown-menu li> a> span{float:left; width:50px; text-align:right; font-size:14px; color:#7ab317;}
+.first-column .thumbnail .image-container .dropdown-menu li> a> span{float:left; width:70px; text-align:right; font-size:14px; color:#7ab317;}
 .first-column .thumbnail .image-container:hover .dropdown-menu{
 	display:block;
 	}
@@ -139,7 +147,7 @@ background:rgba(38, 38, 48, 0.6);
 
 }
 .thumbnail .image-container .dropdown-menu>li>a{
-	padding:3px 10px;
+	padding:3px 0px;
 }
 
 
@@ -201,7 +209,7 @@ background-position: 95% 7px;
 .shares{margin-top:20px;}
 .shares .stButton .stMainServices {height:24px;}
 h2{font-family: 'Lato', sans-serif;
-font-weight:600; 
+font-weight:600;
 color:#32328f;
 font-size:26px;
 }
@@ -237,7 +245,7 @@ padding-left: 10px;
 }
 h3{
 font-family: 'Lato', sans-serif;
-font-weight:600; 
+font-weight:600;
 color:#32328f;
 font-size:20px;
 }
@@ -320,12 +328,14 @@ box-shadow: 0px 0px 0px;
 }
 .heart{width:45px; height:45px; background-color:#ffffff; text-align:center;}
 .heart img{padding-top:10px;}
-.giving .school{width:100%; height:294px; background-color:#32328f; padding:10px; }
+.giving .school{width:100%; height:256px; background-color:#32328f; padding:10px; }
 .giving .school h4{color:#ffffff; font-size:18px; font-family:'Lato', sans-serif; padding:10px;}
-.giving .school a> img{padding-top:60px;}
+.giving .school a> img{padding-top:10px;}
 .giving .thumbnail{border:0px; border-bottom:3px solid #d9d9d9;}
 .giving{margin-bottom:50px;}
 .giving .caption h3{color:#414042;}
+.thumbnail .image-container .heart img{width:30px !important; height:34px !important;}
+.non-profit{float:right; margin-top:-7px; background-color:#7ab317; color:#ffffff;}
 
 
 /* Update Profile */
@@ -381,15 +391,15 @@ margin-right: 10px;
 .account-form .form-group span{color:#636466; font-family:'Lato', sans-serif; font-size:13px; font-style:italic;}
 .account-form .business{}
 .account-form .form-group select{
-	background-color:#cccccc; 
-	box-shadow:0px 0px 0px; 
-	color:#ffffff !important; 
+	background-color:#cccccc;
+	box-shadow:0px 0px 0px;
+	color:#ffffff !important;
 	width: 100%;
 height: 34px;
 padding: 6px 12px;
 font-size: 14px;
 line-height: 1.42857143;
-font-family:'Lato', sans-serif; 
+font-family:'Lato', sans-serif;
 font-size:15px;
 border: 1px solid #ccc;
 border-radius: 4px;
@@ -588,15 +598,15 @@ margin-bottom: 20px;
 }
 .payment .store-address{margin-top: 10px; margin-bottom:10px;}
 .payment .store-city{width:30%; float:left; margin-right: 18px; margin-bottom: 10px;}
-.payment .store-zip{width:30%; float:left; margin-right:18px; margin-bottom: 10px;}
-.payment .store-sate{width:30%; float:left; margin-bottom: 10px;}
+.payment .store-zip{width:30%; float:left;  margin-bottom: 10px;}
+.payment .store-sate{width:30%; float:left; margin-bottom: 10px; margin-right:18px;}
 .account-form .first-name{margin-top:10px; margin-bottom:10px;}
 .account-form .last-name{margin-top:10px; margin-bottom:10px;}
 .account-form .password{margin-top:10px; margin-bottom:20px;}
 .type .store-address{margin-top: 10px; margin-bottom:10px;}
-.type .store-city{width:30%; float:left; margin-right: 18px; margin-bottom: 10px;}
-.type .store-zip{width:30%; float:left; margin-right:18px; margin-bottom: 10px;}
-.type .store-sate{width:30%; float:left; margin-bottom: 10px;}
+.type .store-city{width:30%; float:left; padding-right:10px;  margin-bottom: 10px; margin-right:0px !important;}
+.type .store-zip{width:30%; float:left;  padding-right:10px; margin-bottom: 10px;}
+.type .store-sate{width:30%; float:left; margin-bottom: 10px; padding-right:10px;}
 .account-form  #upgradeaccount{margin-bottom:20px;}
 
 
@@ -628,7 +638,7 @@ button.close{padding:3px 4px;}
             }
             .round img {
                 display: block;
-            /* Stretch 
+            /* Stretch
                   height: 100%;
                   width: 100%; */
             min-width: 100%;
@@ -681,9 +691,16 @@ margin-top: 10px;
 .user-drop-down li> a{color:#ffffff;}
 .user-drop-down li .icon{width: 22px; float: left; margin-right:5px; margin-left:-10px;}
 .user-drop-down>li>a:hover, .user-drop-down>li>a:focus{background:transparent; color:#ffffff;}
+.user-title{
+float: right;
+width: 30px;
+margin-top: 10px;
+color: #ffffff;
+
+}
 
 
-
+.user-log{width:100px;}
 /* Biz Header */
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{background-color:transparent;}
 
@@ -754,8 +771,8 @@ margin-top:20px;
 
 /* Sign-In-2 */
 .head-signin-form {width:35%; float:right;}
-.head-signin-form .phone{width:150px; float: left;}
-.head-signin-form .pass{width:150px; float:left; margin-left:15px;}
+.head-signin-form .phone{width:150px; float: left; margin-right:15px;}
+.head-signin-form .pass{width:150px; float:left; }
 .head-signin-form .pass input{margin-left:-1px;}
 .head-signin-form .pass span{margin-left:10px; }
 .head-signin-form .pass span a{color:#ffffff;}
@@ -803,10 +820,115 @@ body {
 font-family: OpenSans,'Helvetica Neue',Helvetica,Arial,FreeSans,sans-serif;
 }
 /** Index 2 **/
-.navbar-form.search {float:left !important; }
+
 .navbar-form.search .form-group{margin-left:20px; margin-top:12px;}
-.head-signin-form.home{width:55px; float:right; padding-top:10px;}
+.head-signin-form.home{width:80px; float:right; padding-top:0px;}
 .navbar-form.search .form-group input{width:300px; height:30px;}
-.navbar-form.search .btn.search img{padding-top:12px;}
+
+.navbar-form.search input{margin-bottom:5px;}
+
+.navbar-form.search .btn.search{
+width: 40px;
+margin-left:-10px;
+}
+
+/** Validate **/
+
+.error{display:block !important;}
+#firstinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#lastinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#userinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#eininfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#cardinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#ppalinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#passinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#addressinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#cityinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#zipinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#stateinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#creditinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#monthinfo.error{width:76px; height:20px; color:red; font-size:10px; float:left;}
+#monthinfo{width:66px; float:left;}
+#yearinfo{width:66px;}
+#yearinfo.error{width:66px; height:20px; color:red; font-size:10px; float:left;}
+#upgradeaccountinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#cvvinfo.error{ height:20px; color:red; font-size:10px;}
+.CVV-no{width:66px;}
+#firstnameinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#lastnameinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#storeaddressinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#storecityinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#zipcodeinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#storestateinfo.error{width:100%; height:20px; color:red; font-size:10px;}
 
 
+#confirmation-table .btn{
+width: 100%;
+text-align: center;
+
+border-radius:4px;
+background-color: #7ab317;
+color: #ffffff;
+border: 0px;
+font-size:16px;
+}
+
+#confirmation-table .title{
+
+
+padding-top: 30px;
+text-align:left;
+
+}
+#confirmation-table .photo{
+
+float: left;
+}
+
+#confirmation-table .title .user-email{padding-left:20px;}
+
+#confirmation-table .title .user-title{
+width:100%;
+font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',tahoma,verdana,arial,sans-serif;
+font-weight: bold;
+font-size: 18px;
+color: rgb(51,51,51);
+display: block;
+margin-top: 3px;
+padding-left:20px;
+}
+
+#confirmation-table{background-color: #ffffff; width:360px; height:298px;}
+.confirmation .page-header{text-align:center;}
+#confirmation-table>tbody>tr>td{border-top:0px;}
+#confirmation-table>tbody>tr>th{border-top:0px;}
+#confirmation-table tbody{border-bottom:1px solid #ddd;}
+.confirmation{background-color:rgb(245, 246, 247);}
+#confirmation-table .header{background-color:rgb(245, 246, 247);}
+#confirmation-table .header{border:0px !important;}
+#confirmation-table tr{border-left:1px solid #ddd; border-right:1px solid #ddd;}
+#confirmation-table .header >th{border-bottom:1px solid #ddd;;}
+
+
+
+.first-column .thumbnail .image-container .dropdown-menu li> a> span.clicked{color:#ccc;}
+
+
+
+.invitation{
+color: #636466;
+font-family: 'Lato', sans-serif;
+font-size:16px;
+font-weight:400;
+padding-bottom:30px;
+}
+.decline-b button{width:45%; float:left; height:53px; background-color:#c3090a; color:#ffffff; font-size:17px;}
+.accept-b button{width:45%; float:left; height:53px;  color:#ffffff; margin-left:10px; font-size:17px; background-color:#7ab318;}
+.decline-b button .glyphicon{padding-right:5px; font-size:16px;}
+.accept-b button .glyphicon{padding-right:5px; font-size:16px;}
+#reques-user-name{background-color:#b8b9bb; color:#ffffff;}
+#account-id{background-color:#b8b9bb; color:#ffffff;}
+.cancel-b{width:30%; float:left;}
+.save-b{width:65%; float:right;}
+.cancel-b .cancel{width:100%; background-color:#636466; color:#ffffff; font-size:17px; height:50px;}
+.save-b .save{width:100%; font-size:17px; background-color:#7ab318; color:#ffffff; height:50px;}
